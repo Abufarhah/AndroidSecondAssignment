@@ -32,7 +32,16 @@
             $sql = "select * from movies";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
-                $data = $result->fetch_all();
+                $data=array();
+                while(($row=$result->fetch_assoc())!=NULL){
+                    $myObject= new \stdClass();
+                    $myObject->id=(int)$row['id'];
+                    $myObject->name=$row['name'];
+                    $myObject->directedBy=$row['directedBy'];
+                    $myObject->starring=$row['starring'];
+                    $myObject->openingOn=(int)$row['openingOn'];
+                    $data[]=$myObject;
+                }
                 $myJSON = json_encode($data);
                 echo $myJSON;
             } else {
