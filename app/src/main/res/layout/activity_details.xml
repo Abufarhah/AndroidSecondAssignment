@@ -5,23 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="5dp"
-    tools:context=".SecondActivity">
+    tools:context=".DetailsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginBottom="10dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Movie Name:"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtName"
-        android:hint="Example: The Grudge"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Movie Name:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,11 +32,10 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:text="Directed By:"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edtDirectedBy"
-            android:hint="Example: Nicolas Pesce"/>
+            android:id="@+id/edtDirectedBy"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,11 +47,10 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:text="Starring:"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edtStarring"
-            android:hint="Example: Andrea Riseborough, Betty Gilpin"/>
+            android:id="@+id/edtStarring"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,23 +62,11 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:text="Opening On:"/>
-        <EditText
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtOpeningOn"
-            android:inputType="number"
-            android:hint="Example: 2020"/>
+            android:inputType="number"/>
     </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        android:textSize="14sp"
-        android:id="@+id/btnAdd"
-        android:onClick="btnAddOnClick"/>
-
-
-
-
 
 </LinearLayout>
